@@ -1,0 +1,328 @@
+html{
+    background-color: black;
+    overflow: hidden;
+}
+.start{
+    zoom: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 684px;
+    height: 750px;
+    color: white;
+    font-family: Quadrit;
+}
+#startText{
+    position: relative;
+    margin-top: 350px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    animation: startButton ease;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+.game{
+    zoom: 70%;
+    margin: auto;
+    width: 684px;
+}
+.gameover{
+    zoom: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 500px;
+    position: relative;
+    width: 684px;
+    height: 750px;
+    font-size: 20px;
+    color: white;
+    border: dashed 10px #0000a8;
+    background-color: black;
+    font-family: Quadrit;
+}
+#title{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#list {
+    left: 0;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+}
+#restartgame{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    padding-top:10px;
+    background-color: #0000d7;
+    color: white;
+    border-radius: 10px;
+    border:3px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 680px;
+    margin-left: 275px;
+    cursor: pointer;
+}
+.footbar{
+    position: relative;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 491px;
+    height: 50px;
+    background-color: black;
+    font-family: Quadrit;
+    font-size: 20px;
+    color: white;
+}
+@font-face {
+    font-family: 'Quadrit';
+    src: url('../css/Quadrit.ttf')format("truetype");
+}
+.lives{
+    display: inline-block;
+    position: absolute;
+    margin-left: 60px;
+}
+.score{
+    position: relative;
+    margin-left: 330px;
+}
+
+.pacmandiv{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-bottom: -4px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.pacman {
+    display: inline-block;
+    margin-top: 1px;
+    margin-left: 2px;
+    width: 36px;
+    height: 36px;
+}
+
+.pacman::before, .pacman::after {
+    content: "";
+    display: inline-block;
+    margin-bottom: 4px;
+    height: 0;
+    width: 0;
+    margin-top: 2px;
+    border: solid 15px yellow;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: mouthTop 0.7s ease infinite;
+}
+
+.pacman::after {
+    position: relative;
+    margin-left: -30px;
+    border-color: yellow;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: mouthBottom 0.7s ease infinite;
+}
+.ghost{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 34px;
+    background-color: black;
+    margin-bottom: -4px;
+    margin-left: 4px;
+    z-index: 15;
+}
+
+#blinky{
+    background: red;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+#pinky{
+    background: pink;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+#inky{
+    background: cyan;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+#clyde{
+    background: darkorange;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+
+.ghost::before, .ghost::after {
+    content: "";
+    display: inline-block;
+    background: white;
+    height: 12px;
+    width: 10px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.ghost::after {
+    margin-left: 2px;
+}
+
+.eyes::before, .eyes::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background: blue;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    z-index: 99;
+    margin-top: 14px;
+    margin-left: -9px;
+}
+
+.eyes::after {
+    margin-left: 3px;
+}
+.skirtdiv{
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 34px;
+    overflow: hidden;
+    margin-left: -11px;
+}
+.skirt {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    border: solid 4px black;
+    border-top-color: transparent;
+    margin-top: 30px;
+    margin-left: -3px;
+    z-index: 10;
+}
+.skirt::after, .skirt::before {
+    content: "";
+    position: absolute;
+    padding:0;
+    border: solid 5px black;
+    border-top-color: transparent;
+    bottom: -5px;
+    left: 4px;
+    z-index: 10;
+}
+.skirt::after {
+    border-color: black;
+    border-top-color: transparent;
+    bottom: -5px;
+    left: 14px;
+    z-index: 10;
+}
+.skirt span {
+    position: absolute;
+    padding: 0;
+    border: solid 5px black;
+    border-top-color: transparent;
+    bottom: -5px;
+    left: 24px;
+}
+
+.wall{
+    display: inline-block;
+    margin-bottom: -4px;
+    z-index: 49;
+    width: 36px;
+    height: 36px;
+    background-color: #0000a8;
+}
+.wall::after{
+    content: "";
+    display: inline-block;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: -1px;
+    width: 30px;
+    height: 30px;
+    background-color: #0000d7;
+    z-index: 50;
+}
+
+.ground{
+    display: inline-block;
+    margin-bottom: -4px;
+    width: 36px;
+    height: 36px;
+    background-color: black;
+}
+
+.coin{
+    display: inline-block;
+    margin-bottom: -4px;
+    width: 36px;
+    height: 36px;
+    background-color: black;
+    z-index: 99;
+}
+.coin::after{
+    content: "";
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 13px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 10px;
+    z-index: 100;
+}
+.pill{
+    display: inline-block;
+    margin-bottom: -4px;
+    width: 36px;
+    height: 36px;
+    background-color: black;
+    z-index: 99;
+}
+.pill::after{
+    content: "";
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 8px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ff0084;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+@keyframes mouthTop {
+    50% {
+        transform: rotate(38deg);
+    }
+}
+
+@keyframes mouthBottom {
+    50% {
+        transform: rotate(-38deg);
+    }
+}
+
+@keyframes startButton {
+    0% {transform: scale(1.5);}
+    50% {transform: scale(1);}
+    100% {transform: scale(1.5);}
+}
