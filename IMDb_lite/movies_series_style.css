@@ -1,0 +1,129 @@
+.movie-container,.series-container {
+    position: relative;
+    margin-top: 70px;
+    margin-right: 450px;
+    margin-left: 60px;
+    font-family: Arial;
+    font-size: 16px;
+}
+.movies,.series {
+    padding: 20px 30px;
+    background-color: #bbbbbb;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px black;
+}
+.movies div[id],.series div[id]{
+    position: absolute;
+    left: 0;
+    top: -60px;
+}
+.movie-container img,.series-container img{
+    float:left;
+    margin-right: 50px;
+}
+th{
+    text-align: right;
+}
+table{
+    margin-top: -20px;
+}
+table tr td{
+    padding:5px;
+}
+table caption{
+    text-align:left;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+aside{
+    position: fixed;
+    float: right;
+    margin-left: 980px;
+    padding: 5px 20px 5px 20px;
+    background-color: #bbbbbb;
+    font-family: Arial;
+    font-size: 16px;
+    box-shadow: 10px 10px 10px black;
+    width: 250px;
+    height: 500px;
+    overflow: auto;
+}
+aside div{
+    padding: 5px 5px 5px 5px;
+}
+aside h3{
+    font-size: 20px;
+    text-align: center;
+}
+aside div a, aside div a:visited{
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+}
+aside div a:active, aside div a:hover{
+    text-decoration: none;
+    color: #9f2a00;
+    font-weight: bold;
+}
+a[class=anchor] {
+    position: relative;
+    left: 0;
+    top: -90px;
+    display: inline-block;
+}
+.rating p{
+    font-weight: bold;
+    position: relative;
+}
+.rating {
+    margin-left: 375px;
+    padding: 5px;
+    display: flex;
+    position: relative;
+}
+.slider {
+    width: 30%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+p.number{
+    margin-left: 80px;
+    word-spacing: 7px;
+}
+@media print {
+    img{
+        height: 200px;
+        width: 125px;
+    }
+    html,body, div, main, .movies, .series{
+        background-color: white;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+    aside,a[class]{
+        display: none;
+    }
+    table{
+        position: relative;
+        margin-top: 50px;
+        margin-right:10px;
+        padding: 0;
+    }
+    .rating, nav, footer{
+        display: none;
+    }
+    .movie-container,.series-container{
+        position: relative;
+        display: inline-block;
+        width: 1000px;
+    }
+    .movie-container .movies:nth-child(4n+4),.series-container .series:nth-child(4n+4){
+        margin-bottom: 150px;
+    }
+}

@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.rolunk {
+    position: relative;
+    margin-top: 70px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    background-color: black;
+    color: #feca43;
+    font-family: Arial;
+	padding:20px 20px;
+	line-height: 1.5;
+    box-shadow: 
+	0 4.4px 4.6px -11px rgba(0, 0, 0, 0.187),
+	0 10.1px 15.4px -11px rgba(0, 0, 0, 0.352),
+	0 35px 69px -11px rgba(0, 0, 0, 0.83)
+	;
+}
+
+h1{
+	position: relative;
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: 4px;
+	overflow: hidden;
+	background: linear-gradient(90deg, #000, #fff, #000);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 1s linear;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255,255,255,.01);
+}
+@keyframes animate{
+
+	0%{
+		background-position: -500%;
+	}
+}	
+
+article p{
+	font-size: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+@media print {
+	nav,footer,
+	div > div:not(.rolunk),
+	div + div:not(.rolunk) {
+		display: none;
+	}
+	.rolunk{
+		box-shadow: none;
+		color: black;
+	}
+}

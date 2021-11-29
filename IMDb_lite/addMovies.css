@@ -1,0 +1,78 @@
+.addMovies-container{
+    position: relative;
+    margin-top: 70px;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: #232323;
+    font-family: Arial;
+    font-size: 14px;
+    box-shadow: 10px 10px 10px black;
+}
+.addMovies-form fieldset {
+    border: none;
+}
+
+.addMovies-form legend {
+    font-size: 24px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.addMovies-form label{
+    font-weight: bold;
+}
+.addMovies-form input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: solid 1px grey;
+    padding:5px;
+}
+.media_type_container label{
+    font-size: 18px;
+}
+.media_type_container input {
+    margin-bottom: 10px;
+}
+.picture_src_container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border: #232323 solid 2px;
+    border-radius: 10px;
+    width:300px;
+    background-color: #e6e6e6;
+}
+.picture_src_container p{
+    padding: 0;
+    margin:0;
+    font-weight: bold;
+    font-size: 16px;
+    color: orangered;
+}
+.media_type_container{
+    margin-bottom: 10px;
+}
+#release{
+    padding-left: 90px;
+}
+
+#save-button{
+    padding: 5px 60px;
+    color: #232323;
+    background-color: #feca43;
+    border: 1px solid grey;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#save-button:hover{
+    background-color: #e4b53f;
+    cursor: pointer;
+}

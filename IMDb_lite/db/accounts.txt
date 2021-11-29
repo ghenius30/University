@@ -1,0 +1,1 @@
+a:3:{s:8:"username";s:5:"admin";s:5:"email";s:19:"IMDb_Lite@gmail.com";s:8:"password";s:5:"admin";}

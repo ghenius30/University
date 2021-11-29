@@ -1,0 +1,208 @@
+body{
+    background-color: #232323;
+    margin:0;
+}
+header{
+    overflow: visible;
+    background-color: #feca43;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index:20;
+}
+#mainmenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu_button{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 0;
+    padding: 13px;
+    z-index: 10;
+    cursor: pointer;
+}
+#menu_button:hover{
+    background-color: #e4b53f;
+}
+.lenyilo_menu {
+    float: left;
+    overflow: hidden;
+}
+
+.menu_lista {
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    background-color: #feca43;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.menu_lista a {
+    float: none;
+    color: black;
+    font-family: Arial;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu_lista a:hover {
+    background-color: rgb(255, 238, 136);
+    font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.lenyilo_menu:hover .menu_lista {
+    display: inline-block;
+    z-index: 12;
+}
+
+.current{
+    background-color: #c89536;
+    border-right: none;
+    border-bottom:solid 2px #232323;
+    border-top:solid 2px #232323;
+    border-left:solid 5px #232323;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#logo{
+    position: absolute;
+    padding-left: 70px;
+    padding-top: 8px;
+    z-index: 1;
+}
+#search_bar{
+    position: absolute;
+    width:450px;
+    margin-left: 170px;
+    margin-top: 10px;
+    padding: 4px 40px 4px 10px;
+    font-size: 17px;
+    background-color: whitesmoke;
+    border-color: #232323;
+    border-radius: 5px;
+}
+#search_button{
+    position: absolute;
+    margin-left: 591px;
+    margin-top: 15px;
+}
+.navbar .login-container {
+    float: right;
+    position: relative;
+    margin-top: 10px;
+}
+#username, #pwd{
+    font-size: 17px;
+    padding: 4px 10px;
+    background-color: whitesmoke;
+    border-color: #232323;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+#username_label{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -170px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: right;
+}
+.login-container p a {
+    color: orangered;
+}
+.login-container button{
+    padding: 6px 10px;
+    margin-right: 5px;
+    background-color: #232323;
+    color: #feca43;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+#login-text{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+}
+.login-container button:hover {
+    background-color: #494949;
+}
+input:focus, #search_bar:focus, button:focus{
+    outline: auto orangered;
+}
+#search_button:focus{
+    outline: none;
+}
+#search_button:hover{
+    border-radius: 5px;
+    padding: 8px 10px 7.5px 10px;
+    background-color: #e4b53f;
+    margin-top: 8px;
+    margin-left: 583px;
+    transform: scale(0.8);
+}
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+footer{
+    padding: 20px 0 0;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    color:#feca43;
+}
+footer hr{
+    border-top-color:#bbb;
+    opacity:0.5
+}
+.footer-div a{
+    color:#feca43;
+    text-decoration:none;
+}
+.footer-div a:active,.footer-div a:focus,.footer-div a:hover{
+    color: orangered;
+    text-decoration:none;
+}
+.errormessage{
+    background-color: #c30000;
+    position: relative;
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    border-radius: 5px;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
+.message{
+    background-color: white;
+    position: relative;
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    border-radius: 5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    box-shadow: 5px 5px 5px black;
+}
+.nextpage-message{
+    font-weight: normal;
+    font-size: 12px;
+}
